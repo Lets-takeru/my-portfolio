@@ -65,25 +65,33 @@ export default function ProfilePage({ locale }) {
 
         {/* 活動歴 */}
         <h2 className="text-2xl font-semibold mt-12 mb-2 text-black">
-          {locale === 'ja' ? '活動歴' : locale === 'fr' ? 'Historique' : 'Career'}
-        </h2>
-        <ul className="list-disc list-inside text-black text-left">
-          {data.history.map((item, idx) => (
-            <li key={idx}>{item}</li>
-          ))}
-        </ul>
+  {locale === 'ja' ? '活動歴' : locale === 'fr' ? 'Historique' : 'Career'}
+</h2>
+{Array.isArray(data.history) && data.history.length > 0 ? (
+  <ul className="list-disc list-inside text-black text-left">
+    {data.history.map((item, idx) => (
+      <li key={idx}>{item}</li>
+    ))}
+  </ul>
+) : (
+  <p className="text-gray-400 italic">No career history available.</p>
+)}
 
         {/* SNS */}
         <h2 className="text-2xl font-semibold mt-8 mb-2 text-black">SNS</h2>
-        <ul className="text-blue-400 underline">
-          {data.sns.map((item, idx) => (
-            <li key={idx}>
-              <a href={item.url} target="_blank" rel="noopener noreferrer">
-                {item.name}
-              </a>
-            </li>
-          ))}
-        </ul>
+{Array.isArray(data.sns) && data.sns.length > 0 ? (
+  <ul className="text-blue-400 underline">
+    {data.sns.map((item, idx) => (
+      <li key={idx}>
+        <a href={item.url} target="_blank" rel="noopener noreferrer">
+          {item.name}
+        </a>
+      </li>
+    ))}
+  </ul>
+) : (
+  <p className="text-gray-400 italic">No social links available.</p>
+)}
       </div>
     </div>
   );
