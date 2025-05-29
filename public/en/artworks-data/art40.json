@@ -1,0 +1,15 @@
+{
+  "file": "art40.jpg",
+  "title": "家族",
+  "description": "Description of Artwork 6",
+  "index": 40,
+  "slug": "art40",
+  "tags": [
+    "漢字",
+    "オレンジ",
+    "思い出",
+    "贈り物"
+  ],
+  "createdAt": "2024-08-02",
+  "isPublic": true
+}

@@ -1,0 +1,15 @@
+{
+  "file": "art42.jpg",
+  "title": "激",
+  "description": "Description of Artwork 8",
+  "index": 42,
+  "slug": "art42",
+  "tags": [
+    "漢字",
+    "オレンジ",
+    "思い出",
+    "カラフル"
+  ],
+  "createdAt": "2024-08-15",
+  "isPublic": true
+}

@@ -1,0 +1,18 @@
+{
+  "file": "art7.jpg",
+  "title": "咲来",
+  "description": "Description of Artwork 3",
+  "index": 7,
+  "slug": "art7",
+  "tags": [
+    "緑",
+    "漢字",
+    "花",
+    "思い出",
+    "贈り物",
+    "要解除",
+    "カラフル"
+  ],
+  "createdAt": "2024-01-15",
+  "isPublic": false
+}

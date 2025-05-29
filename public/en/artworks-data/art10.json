@@ -1,0 +1,16 @@
+{
+  "file": "art10.jpg",
+  "title": "神戸",
+  "description": "Description of Artwork 6",
+  "index": 10,
+  "slug": "art10",
+  "tags": [
+    "漢字",
+    "白",
+    "思い出",
+    "未譲渡",
+    "カラフル"
+  ],
+  "createdAt": "2024-03-30",
+  "isPublic": true
+}

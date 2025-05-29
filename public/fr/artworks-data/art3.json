@@ -1,0 +1,16 @@
+{
+  "file": "art3.jpg",
+  "title": "烏",
+  "description": "A surreal painting by Salvador Dalí.",
+  "index": 3,
+  "slug": "art3",
+  "tags": [
+    "赤",
+    "烏",
+    "未譲渡",
+    "動物",
+    "カラフル"
+  ],
+  "createdAt": "2024-01-02",
+  "isPublic": true
+}

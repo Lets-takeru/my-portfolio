@@ -1,0 +1,13 @@
+{
+  "file": "art0.jpg",
+  "title": "心臓",
+  "description": "A famous painting by Vincent van Gogh.",
+  "index": 0,
+  "slug": "art0",
+  "tags": [
+    "要解除",
+    "単色"
+  ],
+  "createdAt": "2023-05-10",
+  "isPublic": false
+}

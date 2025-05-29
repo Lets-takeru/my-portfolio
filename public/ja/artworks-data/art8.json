@@ -1,0 +1,16 @@
+{
+  "file": "art8.jpg",
+  "title": "春",
+  "description": "Description of Artwork 4",
+  "index": 8,
+  "slug": "art8",
+  "tags": [
+    "ピンク",
+    "漢字",
+    "季節",
+    "未譲渡",
+    "カラフル"
+  ],
+  "createdAt": "2024-02-16",
+  "isPublic": false
+}

@@ -1,0 +1,16 @@
+{
+  "file": "art5.jpg",
+  "title": "未来",
+  "description": "Description of Artwork 1",
+  "index": 5,
+  "slug": "art5",
+  "tags": [
+    "漢字",
+    "贈り物",
+    "思い出",
+    "要解除",
+    "カラフル"
+  ],
+  "createdAt": "2024-01-05",
+  "isPublic": false
+}

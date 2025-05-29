@@ -1,0 +1,15 @@
+{
+  "file": "art2.jpg",
+  "title": "辰",
+  "description": "A portrait painting by Leonardo da Vinci.",
+  "index": 2,
+  "slug": "art2",
+  "tags": [
+    "漢字",
+    "干支",
+    "未譲渡",
+    "単色"
+  ],
+  "createdAt": "2023-12-30",
+  "isPublic": true
+}

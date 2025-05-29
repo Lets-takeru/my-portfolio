@@ -1,0 +1,15 @@
+{
+  "file": "art225.jpg",
+  "title": "道",
+  "description": "Description of Artwork 11",
+  "index": 225,
+  "slug": "art225",
+  "tags": [
+    "漢字",
+    "未譲渡",
+    "青",
+    "紫"
+  ],
+  "createdAt": "2024-03-26",
+  "isPublic": true
+}

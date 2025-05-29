@@ -1,0 +1,13 @@
+{
+  "file": "art6.jpg",
+  "title": "ダルフ",
+  "description": "Description of Artwork 2",
+  "index": 6,
+  "slug": "art6",
+  "tags": [
+    "思い出",
+    "未譲渡"
+  ],
+  "createdAt": "2024-01-15",
+  "isPublic": false
+}

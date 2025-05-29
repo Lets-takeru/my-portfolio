@@ -1,0 +1,15 @@
+{
+  "file": "art72.jpg",
+  "title": "我",
+  "description": "Description of Artwork 8",
+  "index": 72,
+  "slug": "art72",
+  "tags": [
+    "漢字",
+    "青",
+    "贈り物",
+    "思い出"
+  ],
+  "createdAt": "2024-10-30",
+  "isPublic": true
+}

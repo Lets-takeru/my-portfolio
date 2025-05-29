@@ -1,0 +1,15 @@
+{
+  "file": "art11.jpg",
+  "title": "大阪",
+  "description": "Description of Artwork 7",
+  "index": 11,
+  "slug": "art11",
+  "tags": [
+    "緑",
+    "漢字",
+    "思い出",
+    "未譲渡"
+  ],
+  "createdAt": "2024-01-02",
+  "isPublic": true
+}

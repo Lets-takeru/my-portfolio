@@ -1,0 +1,16 @@
+{
+  "file": "art44.jpg",
+  "title": "秋",
+  "description": "Description of Artwork 10",
+  "index": 44,
+  "slug": "art44",
+  "tags": [
+    "漢字",
+    "オレンジ",
+    "赤",
+    "季節",
+    "未譲渡"
+  ],
+  "createdAt": "2024-10-01",
+  "isPublic": true
+}

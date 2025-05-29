@@ -1,0 +1,14 @@
+{
+  "file": "art1.jpg",
+  "title": "Let,s",
+  "description": "A famous painting by Vincent van Gogh.",
+  "index": 1,
+  "slug": "art1",
+  "tags": [
+    "白",
+    "要解除",
+    "単色"
+  ],
+  "createdAt": "2024-12-01",
+  "isPublic": false
+}

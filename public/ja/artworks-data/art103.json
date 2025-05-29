@@ -1,0 +1,14 @@
+{
+  "file": "art103.jpg",
+  "title": "特別",
+  "description": "Description of Artwork 9",
+  "index": 103,
+  "slug": "art103",
+  "tags": [
+    "漢字",
+    "未譲渡",
+    "ピンク"
+  ],
+  "createdAt": "2024-11-29",
+  "isPublic": true
+}

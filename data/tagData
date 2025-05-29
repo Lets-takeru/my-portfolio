@@ -1,0 +1,35 @@
+export const TAGS = {
+  色: ["赤", "青", "黄", "白", "緑", "紫", "ピンク", "オレンジ"],
+  色数:["単色", "二色", "カラフル"],
+  スタイル: ["漢字", "烏", "お話", "動物", "メッセージ"],
+  シリーズ: ["曲", "季節", "花", "国", "干支"],
+  状況:["未譲渡", "思い出", "要解除"]
+};
+// /data/tagData.js
+export const tagColors = {
+  青: 'bg-blue-500',
+  赤: 'bg-red-500',
+  黄: 'bg-yellow-500',
+  緑: 'bg-green-500',
+  白: 'bg-white text-black',
+  紫: 'bg-purple-500',
+  ピンク: 'bg-pink-400',
+  カラフル: 'bg-orange-500',
+  二色: 'bg-orange-500',
+  単色: 'bg-orange-500',
+  オレンジ: 'bg-orange-500',
+  メッセージ: 'bg-orange-500',
+  漢字: 'bg-orange-500',
+  お話: 'bg-orange-500',
+  烏: 'bg-orange-500',
+  曲: 'bg-indigo-500',
+  季節: 'bg-teal-600',
+  国: 'bg-rose-600',
+  花: 'bg-rose-400',
+  干支: 'bg-sky-500',
+  動物: 'bg-amber-600',
+  未譲渡: 'bg-emerald-500',
+  要解除: 'bg-zinc-600',
+  思い出: 'bg-lime-600',
+  // 拡張自由
+};

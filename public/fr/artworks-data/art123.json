@@ -1,0 +1,15 @@
+{
+  "file": "art123.jpg",
+  "title": "決まり言",
+  "description": "Description of Artwork 29",
+  "index": 123,
+  "slug": "art123",
+  "tags": [
+    "メッセージ",
+    "未譲渡",
+    "白",
+    "青"
+  ],
+  "createdAt": "2024-12-19",
+  "isPublic": false
+}

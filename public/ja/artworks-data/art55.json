@@ -1,0 +1,17 @@
+{
+  "file": "art55.jpg",
+  "title": "日本",
+  "description": "Description of Artwork 21",
+  "index": 55,
+  "slug": "art55",
+  "tags": [
+    "漢字",
+    "オレンジ",
+    "青",
+    "国",
+    "未譲渡",
+    "カラフル"
+  ],
+  "createdAt": "2024-10-14",
+  "isPublic": true
+}

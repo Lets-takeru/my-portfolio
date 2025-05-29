@@ -1,4 +1,7 @@
 @import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
   --background: #ffffff;
@@ -23,4 +26,23 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background: linear-gradient(180deg, #ff9a9e 0%, #fad0c4 100%);
+  background-size: 400% 400%;
+  animation: sunsetGradient 15s ease infinite;
+  transition: background 1s ease;
+  overflow-x: hidden;
+}
+
+@keyframes sunsetGradient {
+  0% {
+    background: linear-gradient(180deg, #ff9a9e 0%, #fad0c4 100%);
+  }
+  50% {
+    background: linear-gradient(180deg, #fbc2eb 0%, #a6c1ee 100%);
+  }
+  100% {
+    background: linear-gradient(180deg, #ff9a9e 0%, #fad0c4 100%);
+  }
 }
