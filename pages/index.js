@@ -30,10 +30,11 @@ export async function getStaticProps({ locale }) {
   // アート作品一覧を取得
   let metadataList = [];
   try {
-    const artworksRes = await fetch(`${baseUrl}/artworks-data/index.json`);
+    const artworksRes = await fetch(`${baseUrl}/${currentLocale}/artworks-data/index.json`);
     if (artworksRes.ok) {
       const allMeta = await artworksRes.json();
       metadataList = allMeta.filter(meta => meta.isPublic);
+      console.log("🧾 metadataList:", metadataList);
     } else {
       console.warn('❗ artworks/index.json fetch failed:', artworksRes.status);
     }
