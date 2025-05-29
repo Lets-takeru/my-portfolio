@@ -10,6 +10,8 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export async function getStaticProps({ locale }) {
+  console.log('BASE_URL in getStaticProps:', baseUrl);
+  
   const currentLocale = locale || 'ja';
 
   const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000';
