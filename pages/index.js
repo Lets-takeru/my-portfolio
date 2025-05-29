@@ -7,6 +7,7 @@ import { heroMessage as jaMessage } from '@/localizedMessages/ja';
 import { heroMessage as enMessage } from '@/localizedMessages/en';
 import { heroMessage as frMessage } from '@/localizedMessages/fr';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export async function getStaticProps({ locale }) {
   const currentLocale = locale || 'ja';
@@ -235,12 +236,15 @@ export default function Home({ allImages, metadataList, newsList }) {
       }}
       onClick={() => handleImageClick(img.file)}
     >
-      <img
-        src={`/artworks/${img.file}`}
-        alt="art"
-        className="object-cover rounded-md border border-cyan-400 shadow-lg w-full h-full"
-        draggable={false}
-      />
+      <Image
+  src={`/artworks/${img.file}`}
+  alt="art"
+  width={300} // 例: 動的サイズがわからない場合、仮サイズを指定
+  height={300}
+  className="object-cover rounded-md border border-cyan-400 shadow-lg"
+  style={{ width: '100%', height: '100%' }}
+  draggable={false}
+/>
     </div>
 ))}
 
@@ -250,11 +254,14 @@ export default function Home({ allImages, metadataList, newsList }) {
             className={`absolute z-50 transition-transform duration-500 ease-out ${closing ? 'animate-slideout' : 'animate-slidein'} bg-black text-white p-4 rounded-2xl shadow-xl flex items-center gap-4 top-24 right-4 w-[80%] max-w-md h-[200px] transform scale-40 sm:scale-100 origin-top-right`}
             style={{ boxShadow: '0 4px 30px rgba(255, 255, 255, 0.3)' }}
           >
-            <img
-              src={`/artworks/${selectedImage}`}
-              alt={selectedMetadata.title}
-              className="rounded-md object-cover h-full w-[160px] border border-cyan-400"
-            />
+            <Image
+  src={`/artworks/${selectedImage}`}
+  alt={selectedMetadata.title}
+  width={160}
+  height={200} // 目安サイズ。正確な高さがわかる場合は調整可
+  className="rounded-md object-cover border border-cyan-400"
+  style={{ height: '100%' }}
+/>
             <div className="flex flex-col justify-between h-full flex-grow py-1">
               <div>
                 <p className="text-xl font-semibold text-cyan-400">No.{selectedMetadata.index + 1}</p>
