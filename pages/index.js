@@ -11,10 +11,7 @@ import Link from 'next/link';
 export async function getStaticProps({ locale }) {
   const currentLocale = locale || 'ja';
 
-  const baseUrl =
-    process.env.NODE_ENV === 'production'
-      ? 'https://Lets-takeru/my-portfolio' // ← あなたのVercelのURLに変更！
-      : 'http://localhost:3000';
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000';
 
   // ニュース一覧を取得
   let newsList = [];

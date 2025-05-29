@@ -8,10 +8,7 @@ import { tagColors } from '@/data/tagData';
 
 export async function getStaticPaths() {
   const locales = ['ja', 'en', 'fr'];
-  const baseUrl =
-    process.env.NODE_ENV === 'production'
-      ? 'https://Lets-takeru/my-portfolio'
-      : 'http://localhost:3000';
+ const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000';
 
   const paths = [];
 

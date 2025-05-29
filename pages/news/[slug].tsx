@@ -17,10 +17,7 @@ type Props = {
 };
 
 // 🔁 本番・ローカル URL 自動切替
-const baseUrl =
-  process.env.NODE_ENV === 'production'
-    ? 'https://Lets-takeru/my-portfolio' // ✅ 本番URLに置き換えてください
-    : 'http://localhost:3000';
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000';
 
 export const getStaticPaths: GetStaticPaths = async () => {
   const locales = ['ja', 'en', 'fr'];

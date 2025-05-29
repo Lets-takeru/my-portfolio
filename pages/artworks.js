@@ -9,10 +9,7 @@ import Link from 'next/link';
 export async function getStaticProps({ locale }) {
   const currentLocale = locale || 'ja';
 
-  const baseUrl =
-    process.env.NODE_ENV === 'production'
-      ? 'https://Lets-takeru/my-portfolio' // ← 🔁 あなたの本番URLに書き換えてください
-      : 'http://localhost:3000';
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000';
 
   // まとめて用意されたJSONをfetch
   const res = await fetch(`${baseUrl}/${currentLocale}/artworks-data/index.json`);

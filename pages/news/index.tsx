@@ -16,10 +16,7 @@ type Props = {
 };
 
 // 🔁 baseUrl は環境で切り替え
-const baseUrl =
-  process.env.NODE_ENV === 'production'
-    ? 'https://your-vercel-site.vercel.app' // ← 🔁 必ず本番URLに置き換えてください
-    : 'http://localhost:3000';
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000';
 
 export const getStaticProps: GetStaticProps = async ({ locale }) => {
   const currentLocale = locale || 'ja';
