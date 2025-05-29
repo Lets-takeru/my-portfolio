@@ -33,6 +33,7 @@ export async function getStaticProps({ locale }) {
     const artworksRes = await fetch(`${baseUrl}/${currentLocale}/artworks-data/index.json`);
     if (artworksRes.ok) {
       const allMeta = await artworksRes.json();
+      console.log("🎨 allMeta raw:", allMeta); 
       metadataList = allMeta.filter(meta => meta.isPublic);
       console.log("🧾 metadataList:", metadataList);
     } else {
