@@ -18,7 +18,7 @@ export async function getStaticProps({ locale }) {
   // ニュース一覧を取得
   let newsList = [];
   try {
-    const newsRes = await fetch(`${baseUrl}/news/ja/index.json`);
+    const newsRes = await fetch(`${baseUrl}/news/${currentLocale}/index.json`);
     if (newsRes.ok) {
       const newsAll = await newsRes.json();
       newsList = newsAll.sort((a, b) => b.index - a.index).slice(0, 3);
@@ -32,7 +32,7 @@ export async function getStaticProps({ locale }) {
   // アート作品一覧を取得
   let metadataList = [];
   try {
-    const artworksRes = await fetch(`${baseUrl}/ja/artworks-data/index.json`);
+    const artworksRes = await fetch(`${baseUrl}/${currentLocale}/artworks-data/index.json`);
     if (artworksRes.ok) {
       const allMeta = await artworksRes.json();
       console.log("🎨 allMeta raw:", allMeta); 
