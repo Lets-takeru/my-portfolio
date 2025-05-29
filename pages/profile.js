@@ -40,11 +40,13 @@ export default function ProfilePage({ locale }) {
         </h2>
 
         {/* 説明文（複数段落） */}
-        {data.description.map((paragraph, idx) => (
-          <p key={idx} className="text-lg text-black mb-4 whitespace-pre-line text-left">
-            {paragraph}
-          </p>
-        ))}
+        {Array.isArray(data.description) ? (
+  data.description.map((item, index) => (
+    <p key={index}>{item}</p>
+  ))
+) : (
+  <p>{data.description}</p>
+)}
 
         {/* 🔻説明文の後に画像と説明を追加 */}
         <div className="mt-10 text-left">
