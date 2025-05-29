@@ -1,5 +1,6 @@
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useRouter } from 'next/router';
+import Image from 'next/image';
 
 // 各言語のデータを読み込み
 import { profileData as ja } from '../data/profile/ja';
@@ -27,12 +28,13 @@ export default function ProfilePage({ locale }) {
         <h1 className="text-3xl font-bold mb-6 text-center">Profile</h1>
 
         {/* プロフィール画像 */}
-        <img
-          src={data.image}
-          alt="プロフィール画像"
-          className="rounded-full mx-auto mb-4 shadow-lg"
-          style={{ width: '180px', height: '180px', objectFit: 'cover' }}
-        />
+        <Image
+  src={data.image}
+  alt="プロフィール画像"
+  width={180}
+  height={180}
+  className="rounded-full mx-auto mb-4 shadow-lg object-cover"
+/>
 
         {/* 🔻ここに見出しを追加 */}
         <h2 className="text-xl font-semibold mb-4 text-center text-black">
@@ -50,11 +52,13 @@ export default function ProfilePage({ locale }) {
 
         {/* 🔻説明文の後に画像と説明を追加 */}
         <div className="mt-10 text-left">
-          <img
-            src="/images/art0.jpg" // あなたの画像パスに変更
-            alt="代表作品"
-            className="w-full max-w-md mx-auto mb-4 rounded shadow"
-          />
+          <Image
+  src="/images/art0.jpg" // public/images/ に存在するファイル
+  alt="代表作品"
+  width={300}           // 必須。必要に応じて調整
+  height={300}          // 必須。必要に応じて調整
+  className="w-full max-w-md mx-auto mb-4 rounded shadow object-cover"
+/>
           <h2 className="text-xl font-semibold mb-2 text-black">林武輝　HAYASHI TAKERU</h2>
           <p className="text-black text-md whitespace-pre-line">
             神奈川県横浜市出身

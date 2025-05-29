@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useAuth } from '@/context/AuthContext';
 import Link from 'next/link';
+import Image from 'next/image';
 
 
 
@@ -202,11 +203,13 @@ return matchText && matchTags;
   </span>
 )}
   {/* 左側：画像 */}
-  <img
-    src={`/artworks/${image.file}`}
-    alt={image.file}
-    className="w-36 h-36 object-cover rounded-md border border-cyan-400"
-  />
+  <Image
+  src={`/artworks/${image.file}`} // public/artworks/ にあるファイル
+  alt={image.file}
+  width={144} // 36 * 4 (Tailwindのrem単位換算: 1rem = 16px)
+  height={144}
+  className="object-cover rounded-md border border-cyan-400"
+/>
 
   {/* 右側：情報 */}
   <div className="flex flex-col justify-between text-white flex-1">
