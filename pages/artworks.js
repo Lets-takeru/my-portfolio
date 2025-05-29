@@ -10,7 +10,7 @@ import Image from 'next/image';
 export async function getStaticProps({ locale }) {
   const currentLocale = locale || 'ja';
 
-  const baseUrl = 'https://my-portfolio-two-hazel-27.vercel.app';
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000';
 
   // まとめて用意されたJSONをfetch
   const res = await fetch(`${baseUrl}/${currentLocale}/artworks-data/index.json`);
